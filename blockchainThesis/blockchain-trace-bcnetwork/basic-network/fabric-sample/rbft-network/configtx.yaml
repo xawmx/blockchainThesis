@@ -1,0 +1,171 @@
+---
+Organizations:
+    - &OrdererOrg
+        Name: OrdererOrg
+        ID: OrdererMSP
+        MSPDir: crypto-config/ordererOrganizations/yzm.com/msp
+        Policies:
+            Readers:
+                Type: Signature
+                Rule: "OR('OrdererMSP.member')"
+            Writers:
+                Type: Signature
+                Rule: "OR('OrdererMSP.member')"
+            Admins:
+                Type: Signature
+                Rule: "OR('OrdererMSP.admin')"
+    - &OrgA
+        Name: OrgAMSP
+        ID: OrgAMSP
+        MSPDir: crypto-config/peerOrganizations/orga.com/msp
+        Policies:
+            Readers:
+                Type: Signature
+                Rule: "OR('OrgAMSP.admin', 'OrgAMSP.peer', 'OrgAMSP.client')"
+            Writers:
+                Type: Signature
+                Rule: "OR('OrgAMSP.admin', 'OrgAMSP.client')"
+            Admins:
+                Type: Signature
+                Rule: "OR('OrgAMSP.admin')"
+        AnchorPeers:
+            - Host: peer0.orga.com
+              Port: 7051
+            - Host: peer1.orga.com
+              Port: 7051
+            - Host: peer2.orga.com
+              Port: 7051
+            - Host: peer3.orga.com
+              Port: 7051
+            - Host: peer4.orga.com
+              Port: 7051
+
+
+Capabilities:
+    Channel: &ChannelCapabilities
+        V1_4_3: true
+        V1_3: false
+        V1_1: false
+
+    Orderer: &OrdererCapabilities
+        V1_4_2: true
+        V1_1: false
+
+    Application: &ApplicationCapabilities
+        V1_4_2: true
+        V1_3: false
+        V1_2: false
+        V1_1: false
+
+Application: &ApplicationDefaults
+    Organizations:
+
+    Policies:
+        Readers:
+            Type: ImplicitMeta
+            Rule: "ANY Readers"
+        Writers:
+            Type: ImplicitMeta
+            Rule: "ANY Writers"
+        Admins:
+            Type: ImplicitMeta
+            Rule: "MAJORITY Admins"
+
+    Capabilities:
+        <<: *ApplicationCapabilities
+
+Orderer: &OrdererDefaults
+    OrdererType: pbft
+    Addresses:
+        - orderer0.yzm.com:6050
+        - orderer1.yzm.com:6051
+        - orderer2.yzm.com:6052
+        - orderer3.yzm.com:6053
+        - orderer4.yzm.com:6054
+        - orderer5.yzm.com:6055
+        - orderer6.yzm.com:6056
+        - orderer7.yzm.com:6057
+        - orderer8.yzm.com:6058
+        - orderer9.yzm.com:6059
+        - orderer10.yzm.com:6060
+        - orderer11.yzm.com:6061
+        - orderer12.yzm.com:6062
+        - orderer13.yzm.com:6063
+        - orderer14.yzm.com:6064
+        - orderer15.yzm.com:6065
+        - orderer16.yzm.com:6066
+        - orderer17.yzm.com:6067
+        - orderer18.yzm.com:6068
+        - orderer19.yzm.com:6069
+        - orderer20.yzm.com:6070
+        - orderer21.yzm.com:6071
+        - orderer22.yzm.com:6072
+        - orderer23.yzm.com:6073
+        - orderer24.yzm.com:6074
+        - orderer25.yzm.com:6075
+        - orderer26.yzm.com:6076
+        - orderer27.yzm.com:6077
+        - orderer28.yzm.com:6078
+        - orderer29.yzm.com:6079
+        - orderer30.yzm.com:6080
+
+
+    BatchTimeout: 5s
+    BatchSize:
+        MaxMessageCount: 10
+        AbsoluteMaxBytes: 256 MB
+        PreferredMaxBytes: 512 KB
+
+    Organizations:
+    Policies:
+        Readers:
+            Type: ImplicitMeta
+            Rule: "ANY Readers"
+        Writers:
+            Type: ImplicitMeta
+            Rule: "ANY Writers"
+        Admins:
+            Type: ImplicitMeta
+            Rule: "MAJORITY Admins"
+        BlockValidation:
+            Type: ImplicitMeta
+            Rule: "ANY Writers"
+
+Channel: &ChannelDefaults
+    Policies:
+        Readers:
+            Type: ImplicitMeta
+            Rule: "ANY Readers"
+        Writers:
+            Type: ImplicitMeta
+            Rule: "ANY Writers"
+        Admins:
+            Type: ImplicitMeta
+            Rule: "MAJORITY Admins"
+
+    Capabilities:
+        <<: *ChannelCapabilities
+
+Profiles:
+    Genesis:
+        <<: *ChannelDefaults
+        Orderer:
+            <<: *OrdererDefaults
+            Organizations:
+                - *OrdererOrg
+            Capabilities:
+                <<: *OrdererCapabilities
+        Consortiums:
+            SampleConsortium:
+                Organizations:
+                    - *OrgA
+    Channel:
+        Consortium: SampleConsortium
+        <<: *ChannelDefaults
+        Application:
+            <<: *ApplicationDefaults
+            Organizations:
+                - *OrgA
+            Capabilities:
+                <<: *ApplicationCapabilities
+

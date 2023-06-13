@@ -1,0 +1,403 @@
+version: '2'
+
+networks:
+  solonet:
+    ipam:
+      config:
+        - subnet: 172.23.0.0/24
+          gateway: 172.23.0.1
+
+services:
+  orderer0.yzm.com:
+    extends:
+      file:   base/docker-compose-base.yaml
+      service: orderer0.yzm.com
+    container_name: orderer0.trace.com
+    networks:
+      solonet:
+        ipv4_address: 172.23.0.100
+
+  orderer1.yzm.com:
+    extends:
+      file:   base/docker-compose-base.yaml
+      service: orderer1.yzm.com
+    container_name: orderer1.trace.com
+    networks:
+      solonet:
+        ipv4_address: 172.23.0.101
+
+  orderer2.yzm.com:
+    extends:
+      file:   base/docker-compose-base.yaml
+      service: orderer2.yzm.com
+    container_name: orderer2.trace.com
+    networks:
+      solonet:
+        ipv4_address: 172.23.0.102
+
+  orderer3.yzm.com:
+    extends:
+      file:   base/docker-compose-base.yaml
+      service: orderer3.yzm.com
+    container_name: orderer3.trace.com
+    networks:
+      solonet:
+        ipv4_address: 172.23.0.103
+
+  orderer4.yzm.com:
+    extends:
+      file:   base/docker-compose-base.yaml
+      service: orderer4.yzm.com
+    container_name: orderer4.trace.com
+    networks:
+      solonet:
+        ipv4_address: 172.23.0.104
+
+  orderer5.yzm.com:
+    extends:
+      file:   base/docker-compose-base.yaml
+      service: orderer5.yzm.com
+    container_name: orderer5.trace.com
+    networks:
+      solonet:
+        ipv4_address: 172.23.0.105
+
+  orderer6.yzm.com:
+    extends:
+      file:   base/docker-compose-base.yaml
+      service: orderer6.yzm.com
+    container_name: orderer6.trace.com
+    networks:
+      solonet:
+        ipv4_address: 172.23.0.106
+
+  orderer7.yzm.com:
+    extends:
+      file:   base/docker-compose-base.yaml
+      service: orderer7.yzm.com
+    container_name: orderer7.trace.com
+    networks:
+      solonet:
+        ipv4_address: 172.23.0.107
+
+  orderer8.yzm.com:
+    extends:
+      file:   base/docker-compose-base.yaml
+      service: orderer8.yzm.com
+    container_name: orderer8.trace.com
+    networks:
+      solonet:
+        ipv4_address: 172.23.0.108
+
+  orderer9.yzm.com:
+    extends:
+      file:   base/docker-compose-base.yaml
+      service: orderer9.yzm.com
+    container_name: orderer9.trace.com
+    networks:
+      solonet:
+        ipv4_address: 172.23.0.109
+
+  orderer10.yzm.com:
+    extends:
+      file:   base/docker-compose-base.yaml
+      service: orderer10.yzm.com
+    container_name: orderer10.trace.com
+    networks:
+      solonet:
+        ipv4_address: 172.23.0.110
+
+  orderer11.yzm.com:
+    extends:
+      file:   base/docker-compose-base.yaml
+      service: orderer11.yzm.com
+    container_name: orderer11.trace.com
+    networks:
+      solonet:
+        ipv4_address: 172.23.0.111
+
+  orderer12.yzm.com:
+    extends:
+      file:   base/docker-compose-base.yaml
+      service: orderer12.yzm.com
+    container_name: orderer12.trace.com
+    networks:
+      solonet:
+        ipv4_address: 172.23.0.112
+
+  orderer13.yzm.com:
+    extends:
+      file:   base/docker-compose-base.yaml
+      service: orderer13.yzm.com
+    container_name: orderer13.trace.com
+    networks:
+      solonet:
+        ipv4_address: 172.23.0.113
+
+  orderer14.yzm.com:
+    extends:
+      file:   base/docker-compose-base.yaml
+      service: orderer14.yzm.com
+    container_name: orderer14.trace.com
+    networks:
+      solonet:
+        ipv4_address: 172.23.0.114
+
+  orderer15.yzm.com:
+    extends:
+      file:   base/docker-compose-base.yaml
+      service: orderer15.yzm.com
+    container_name: orderer15.trace.com
+    networks:
+      solonet:
+        ipv4_address: 172.23.0.115
+
+  orderer16.yzm.com:
+    extends:
+      file:   base/docker-compose-base.yaml
+      service: orderer16.yzm.com
+    container_name: orderer16.trace.com
+    networks:
+      solonet:
+        ipv4_address: 172.23.0.116
+
+  orderer17.yzm.com:
+    extends:
+      file:   base/docker-compose-base.yaml
+      service: orderer17.yzm.com
+    container_name: orderer17.trace.com
+    networks:
+      solonet:
+        ipv4_address: 172.23.0.117
+
+  orderer18.yzm.com:
+    extends:
+      file:   base/docker-compose-base.yaml
+      service: orderer18.yzm.com
+    container_name: orderer18.trace.com
+    networks:
+      solonet:
+        ipv4_address: 172.23.0.118
+
+  orderer19.yzm.com:
+    extends:
+      file:   base/docker-compose-base.yaml
+      service: orderer19.yzm.com
+    container_name: orderer19.trace.com
+    networks:
+      solonet:
+        ipv4_address: 172.23.0.119
+
+  orderer20.yzm.com:
+    extends:
+      file:   base/docker-compose-base.yaml
+      service: orderer20.yzm.com
+    container_name: orderer20.trace.com
+    networks:
+      solonet:
+        ipv4_address: 172.23.0.120
+
+  orderer21.yzm.com:
+    extends:
+      file:   base/docker-compose-base.yaml
+      service: orderer21.yzm.com
+    container_name: orderer21.trace.com
+    networks:
+      solonet:
+        ipv4_address: 172.23.0.121
+
+  orderer22.yzm.com:
+    extends:
+      file:   base/docker-compose-base.yaml
+      service: orderer22.yzm.com
+    container_name: orderer22.trace.com
+    networks:
+      solonet:
+        ipv4_address: 172.23.0.122
+
+  orderer23.yzm.com:
+    extends:
+      file:   base/docker-compose-base.yaml
+      service: orderer23.yzm.com
+    container_name: orderer23.trace.com
+    networks:
+      solonet:
+        ipv4_address: 172.23.0.123
+
+  orderer24.yzm.com:
+    extends:
+      file:   base/docker-compose-base.yaml
+      service: orderer24.yzm.com
+    container_name: orderer24.trace.com
+    networks:
+      solonet:
+        ipv4_address: 172.23.0.124
+
+  orderer25.yzm.com:
+    extends:
+      file:   base/docker-compose-base.yaml
+      service: orderer25.yzm.com
+    container_name: orderer25.trace.com
+    networks:
+      solonet:
+        ipv4_address: 172.23.0.125
+
+  orderer26.yzm.com:
+    extends:
+      file:   base/docker-compose-base.yaml
+      service: orderer26.yzm.com
+    container_name: orderer26.trace.com
+    networks:
+      solonet:
+        ipv4_address: 172.23.0.126
+
+  orderer27.yzm.com:
+    extends:
+      file:   base/docker-compose-base.yaml
+      service: orderer27.yzm.com
+    container_name: orderer27.trace.com
+    networks:
+      solonet:
+        ipv4_address: 172.23.0.127
+
+  orderer28.yzm.com:
+    extends:
+      file:   base/docker-compose-base.yaml
+      service: orderer28.yzm.com
+    container_name: orderer28.trace.com
+    networks:
+      solonet:
+        ipv4_address: 172.23.0.128
+
+  orderer29.yzm.com:
+    extends:
+      file:   base/docker-compose-base.yaml
+      service: orderer29.yzm.com
+    container_name: orderer29.trace.com
+    networks:
+      solonet:
+        ipv4_address: 172.23.0.129
+
+  orderer30.yzm.com:
+    extends:
+      file:   base/docker-compose-base.yaml
+      service: orderer30.yzm.com
+    container_name: orderer30.trace.com
+    networks:
+      solonet:
+        ipv4_address: 172.23.0.130
+
+
+
+  peer0.orga.com:
+    container_name: peer0.orga.com
+    extends:
+      file:  base/docker-compose-base.yaml
+      service: peer0.orga.com
+    networks:
+      solonet:
+        ipv4_address: 172.23.0.2
+
+  peer1.orga.com:
+    container_name: peer1.orga.com
+    extends:
+      file:  base/docker-compose-base.yaml
+      service: peer1.orga.com
+    networks:
+      solonet:
+        ipv4_address: 172.23.0.3
+
+  peer2.orga.com:
+    container_name: peer2.orga.com
+    extends:
+      file:  base/docker-compose-base.yaml
+      service: peer2.orga.com
+    networks:
+      solonet:
+        ipv4_address: 172.23.0.4
+
+  peer3.orga.com:
+    container_name: peer3.orga.com
+    extends:
+      file:  base/docker-compose-base.yaml
+      service: peer3.orga.com
+    networks:
+      solonet:
+        ipv4_address: 172.23.0.5
+
+  peer4.orga.com:
+    container_name: peer4.orga.com
+    extends:
+      file:  base/docker-compose-base.yaml
+      service: peer4.orga.com
+    networks:
+      solonet:
+        ipv4_address: 172.23.0.6
+
+
+  cli:
+    container_name: cli
+    image: hyperledger/fabric-tools
+    tty: true
+    stdin_open: true
+    environment:
+      - SYS_CHANNEL=sys_channel
+      - GOPATH=/opt/gopath
+      - CORE_VM_ENDPOINT=unix:///host/var/run/docker.sock
+      - FABRIC_LOGGING_SPEC=INFO
+      - CORE_PEER_ID=cli
+      - CORE_PEER_ADDRESS=peer0.orga.com:7051
+      - CORE_PEER_LOCALMSPID=OrgAMSP
+      - CORE_PEER_TLS_ENABLED=false
+      - CORE_PEER_MSPCONFIGPATH=/opt/gopath/src/github.com/hyperledger/fabric/peer/crypto/peerOrganizations/orga.com/users/Admin@orga.com/msp
+    working_dir: /opt/gopath/src/github.com/hyperledger/fabric/peer
+    command: /bin/bash
+    volumes:
+        - /var/run/:/host/var/run/
+        - ./../chaincode/:/opt/gopath/src/github.com/chaincode
+        - ./crypto-config:/opt/gopath/src/github.com/hyperledger/fabric/peer/crypto/
+        - ./scripts:/opt/gopath/src/github.com/hyperledger/fabric/peer/scripts/
+        - ./channel-artifacts:/opt/gopath/src/github.com/hyperledger/fabric/peer/channel-artifacts
+    depends_on:
+      - orderer0.yzm.com
+      - orderer1.yzm.com
+      - orderer2.yzm.com
+      - orderer3.yzm.com
+      - orderer4.yzm.com
+      - orderer5.yzm.com
+      - orderer6.yzm.com
+      - orderer7.yzm.com
+      - orderer8.yzm.com
+      - orderer9.yzm.com
+      - orderer10.yzm.com
+      - orderer11.yzm.com
+      - orderer12.yzm.com
+      - orderer13.yzm.com
+      - orderer14.yzm.com
+      - orderer15.yzm.com
+      - orderer16.yzm.com
+      - orderer17.yzm.com
+      - orderer18.yzm.com
+      - orderer19.yzm.com
+      - orderer20.yzm.com
+      - orderer21.yzm.com
+      - orderer22.yzm.com
+      - orderer23.yzm.com
+      - orderer24.yzm.com
+      - orderer25.yzm.com
+      - orderer26.yzm.com
+      - orderer27.yzm.com
+      - orderer28.yzm.com
+      - orderer29.yzm.com
+      - orderer30.yzm.com
+      - peer0.orga.com
+      - peer1.orga.com
+      - peer2.orga.com
+      - peer3.orga.com
+      - peer4.orga.com
+
+    networks:
+      solonet:
+        ipv4_address: 172.23.0.200
+
+

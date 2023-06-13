@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="ALL" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="0d80505d-2831-4065-891e-1a495abffe57" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/rbft-network/crypto-config/ordererOrganizations/yzm.com/orderers/orderer18.yzm.com/msp/tlscacerts/tlsca.yzm.com-cert.pem" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rbft-network/crypto-config/ordererOrganizations/yzm.com/orderers/orderer19.yzm.com/msp/tlscacerts/tlsca.yzm.com-cert.pem" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rbft-network/crypto-config/ordererOrganizations/yzm.com/orderers/orderer20.yzm.com/msp/tlscacerts/tlsca.yzm.com-cert.pem" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rbft-network/crypto-config/ordererOrganizations/yzm.com/orderers/orderer21.yzm.com/msp/tlscacerts/tlsca.yzm.com-cert.pem" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rbft-network/crypto-config/ordererOrganizations/yzm.com/orderers/orderer27.yzm.com/msp/tlscacerts/tlsca.yzm.com-cert.pem" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rbft-network/crypto-config/ordererOrganizations/yzm.com/orderers/orderer28.yzm.com/msp/tlscacerts/tlsca.yzm.com-cert.pem" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rbft-network/crypto-config/ordererOrganizations/yzm.com/orderers/orderer29.yzm.com/msp/tlscacerts/tlsca.yzm.com-cert.pem" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rbft-network/crypto-config/ordererOrganizations/yzm.com/orderers/orderer30.yzm.com/msp/tlscacerts/tlsca.yzm.com-cert.pem" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rbft-network/crypto-config/ordererOrganizations/yzm.com/tlsca/tlsca.yzm.com-cert.pem" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rbft-network/crypto-config/ordererOrganizations/yzm.com/users/Admin@yzm.com/msp/tlscacerts/tlsca.yzm.com-cert.pem" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rbft-network/crypto-config/peerOrganizations/orga.com/msp/cacerts/ca.orga.com-cert.pem" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rbft-network/crypto-config/peerOrganizations/orga.com/msp/tlscacerts/tlsca.orga.com-cert.pem" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rbft-network/crypto-config/peerOrganizations/orga.com/peers/peer0.orga.com/msp/cacerts/ca.orga.com-cert.pem" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rbft-network/crypto-config/peerOrganizations/orga.com/peers/peer0.orga.com/msp/config.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rbft-network/crypto-config/peerOrganizations/orga.com/peers/peer0.orga.com/msp/signcerts/peer0.orga.com-cert.pem" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rbft-network/crypto-config/peerOrganizations/orga.com/peers/peer0.orga.com/msp/tlscacerts/tlsca.orga.com-cert.pem" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rbft-network/crypto-config/peerOrganizations/orga.com/peers/peer0.orga.com/tls/ca.crt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rbft-network/crypto-config/peerOrganizations/orga.com/peers/peer0.orga.com/tls/server.crt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rbft-network/crypto-config/peerOrganizations/orga.com/peers/peer0.orga.com/tls/server.key" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rbft-network/crypto-config/peerOrganizations/orga.com/peers/peer1.orga.com/msp/cacerts/ca.orga.com-cert.pem" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rbft-network/crypto-config/peerOrganizations/orga.com/peers/peer1.orga.com/msp/config.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rbft-network/crypto-config/peerOrganizations/orga.com/peers/peer1.orga.com/msp/signcerts/peer1.orga.com-cert.pem" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rbft-network/crypto-config/peerOrganizations/orga.com/peers/peer1.orga.com/msp/tlscacerts/tlsca.orga.com-cert.pem" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rbft-network/crypto-config/peerOrganizations/orga.com/peers/peer1.orga.com/tls/ca.crt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rbft-network/crypto-config/peerOrganizations/orga.com/peers/peer1.orga.com/tls/server.crt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rbft-network/crypto-config/peerOrganizations/orga.com/peers/peer1.orga.com/tls/server.key" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rbft-network/crypto-config/peerOrganizations/orga.com/peers/peer2.orga.com/msp/cacerts/ca.orga.com-cert.pem" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rbft-network/crypto-config/peerOrganizations/orga.com/peers/peer2.orga.com/msp/config.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rbft-network/crypto-config/peerOrganizations/orga.com/peers/peer2.orga.com/msp/signcerts/peer2.orga.com-cert.pem" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rbft-network/crypto-config/peerOrganizations/orga.com/peers/peer2.orga.com/msp/tlscacerts/tlsca.orga.com-cert.pem" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rbft-network/crypto-config/peerOrganizations/orga.com/peers/peer2.orga.com/tls/ca.crt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rbft-network/crypto-config/peerOrganizations/orga.com/peers/peer2.orga.com/tls/server.crt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rbft-network/crypto-config/peerOrganizations/orga.com/peers/peer2.orga.com/tls/server.key" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rbft-network/crypto-config/peerOrganizations/orga.com/peers/peer3.orga.com/msp/cacerts/ca.orga.com-cert.pem" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rbft-network/crypto-config/peerOrganizations/orga.com/peers/peer3.orga.com/msp/config.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rbft-network/crypto-config/peerOrganizations/orga.com/peers/peer3.orga.com/msp/signcerts/peer3.orga.com-cert.pem" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rbft-network/crypto-config/peerOrganizations/orga.com/peers/peer3.orga.com/msp/tlscacerts/tlsca.orga.com-cert.pem" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rbft-network/crypto-config/peerOrganizations/orga.com/peers/peer3.orga.com/tls/ca.crt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rbft-network/crypto-config/peerOrganizations/orga.com/peers/peer3.orga.com/tls/server.crt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rbft-network/crypto-config/peerOrganizations/orga.com/peers/peer3.orga.com/tls/server.key" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rbft-network/crypto-config/peerOrganizations/orga.com/users/User1@orga.com/msp/signcerts/User1@orga.com-cert.pem" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vpbft-network/crypto-config/ordererOrganizations/yzm.com/orderers/orderer2.yzm.com/msp/tlscacerts/tlsca.yzm.com-cert.pem" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pbft/chain.go" beforeDir="false" afterPath="$PROJECT_DIR$/pbft/chain.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pbft/cmd/cmd.go" beforeDir="false" afterPath="$PROJECT_DIR$/pbft/cmd/cmd.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pbft/consensus.go" beforeDir="false" afterPath="$PROJECT_DIR$/pbft/consensus.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pbft/consenter.go" beforeDir="false" afterPath="$PROJECT_DIR$/pbft/consenter.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pbft/message/buffer.go" beforeDir="false" afterPath="$PROJECT_DIR$/pbft/message/buffer.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pbft/message/lastreply.go" beforeDir="false" afterPath="$PROJECT_DIR$/pbft/message/lastreply.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pbft/message/message.go" beforeDir="false" afterPath="$PROJECT_DIR$/pbft/message/message.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pbft/node/boradcast.go" beforeDir="false" afterPath="$PROJECT_DIR$/pbft/node/boradcast.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pbft/node/commit.go" beforeDir="false" afterPath="$PROJECT_DIR$/pbft/node/commit.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pbft/node/execute.go" beforeDir="false" afterPath="$PROJECT_DIR$/pbft/node/execute.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pbft/node/node.go" beforeDir="false" afterPath="$PROJECT_DIR$/pbft/node/node.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pbft/node/prepare.go" beforeDir="false" afterPath="$PROJECT_DIR$/pbft/node/prepare.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pbft/node/reply.go" beforeDir="false" afterPath="$PROJECT_DIR$/pbft/node/reply.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pbft/node/request.go" beforeDir="false" afterPath="$PROJECT_DIR$/pbft/node/request.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pbft/node/sequence.go" beforeDir="false" afterPath="$PROJECT_DIR$/pbft/node/sequence.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pbft/node/utils.go" beforeDir="false" afterPath="$PROJECT_DIR$/pbft/node/utils.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pbft/server/server.go" beforeDir="false" afterPath="$PROJECT_DIR$/pbft/server/server.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rbft/algorithm/queue.go" beforeDir="false" afterPath="$PROJECT_DIR$/rbft/algorithm/queue.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rbft/algorithm/queue_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/rbft/algorithm/queue_test.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rbft/consensus.go" beforeDir="false" afterPath="$PROJECT_DIR$/rbft/consensus.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rbft/consenter.go" beforeDir="false" afterPath="$PROJECT_DIR$/rbft/consenter.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rbft/crypto/crypto_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/rbft/crypto/crypto_test.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rbft/message/com.go" beforeDir="false" afterPath="$PROJECT_DIR$/rbft/message/com.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rbft/message/commit.go" beforeDir="false" afterPath="$PROJECT_DIR$/rbft/message/commit.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rbft/message/lastblock.go" beforeDir="false" afterPath="$PROJECT_DIR$/rbft/message/lastblock.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rbft/message/prepare.go" beforeDir="false" afterPath="$PROJECT_DIR$/rbft/message/prepare.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rbft/message/proposal.go" beforeDir="false" afterPath="$PROJECT_DIR$/rbft/message/proposal.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rbft/node/boradcast.go" beforeDir="false" afterPath="$PROJECT_DIR$/rbft/node/boradcast.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rbft/node/com.go" beforeDir="false" afterPath="$PROJECT_DIR$/rbft/node/com.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rbft/node/node.go" beforeDir="false" afterPath="$PROJECT_DIR$/rbft/node/node.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rbft/node/prepare.go" beforeDir="false" afterPath="$PROJECT_DIR$/rbft/node/prepare.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rbft/node/proposal.go" beforeDir="false" afterPath="$PROJECT_DIR$/rbft/node/proposal.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rbft/node/sequence.go" beforeDir="false" afterPath="$PROJECT_DIR$/rbft/node/sequence.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rbft/node/state.go" beforeDir="false" afterPath="$PROJECT_DIR$/rbft/node/state.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rbft/server/handle.go" beforeDir="false" afterPath="$PROJECT_DIR$/rbft/server/handle.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../fabric/protos/common/collection.pb.go" beforeDir="false" afterPath="$PROJECT_DIR$/../fabric/protos/common/collection.pb.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../fabric/protos/peer/transaction.pb.go" beforeDir="false" afterPath="$PROJECT_DIR$/../fabric/protos/peer/transaction.pb.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../chaincode/fabcar/go/fabcar.go" beforeDir="false" afterPath="$PROJECT_DIR$/../../chaincode/fabcar/go/fabcar.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../results/pbft-Byz/report-16order.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../../results/pbft-Byz/report-16order.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../results/pbft-Byz/report-4order.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../../results/pbft-Byz/report-4order.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../results/pbft-Byz/report-7order.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../../results/pbft-Byz/report-7order.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../results/pbft-noByz/report-16order.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../../results/pbft-noByz/report-16order.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../results/pbft-noByz/report-31order.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../../results/pbft-noByz/report-31order.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../results/pbft-noByz/report-4order.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../../results/pbft-noByz/report-4order.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../results/pbft-noByz/report-7order.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../../results/pbft-noByz/report-7order.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../results/数据上链.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../results/数据查询接口.csv" beforeDir="false" afterPath="$PROJECT_DIR$/../../../results/数据查询接口.csv" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="GOROOT" url="file://$PROJECT_DIR$/../../../../../../../../../Download/software/Go" />
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../../.." />
+  </component>
+  <component name="GoLibraries">
+    <option name="indexEntireGoPath" value="true" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectId" id="2OuUBJwo857NqXXqvvSHlYC5oKE" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.go.format.on.save.advertiser.fired": "true",
+    "RunOnceActivity.go.formatter.settings.were.checked": "true",
+    "RunOnceActivity.go.migrated.go.modules.settings": "true",
+    "RunOnceActivity.go.modules.go.list.on.any.changes.was.set": "true",
+    "RunOnceActivity.go.watchers.conflict.with.on.save.actions.check.performed": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "go.import.settings.migrated": "true",
+    "go.sdk.automatically.set": "true",
+    "last_opened_file_path": "D:/study/go/src/github.com/cherryFloris/blockchainThesis",
+    "nodejs_package_manager_path": "npm",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VgoProject">
+    <integration-enabled>false</integration-enabled>
+    <settings-migrated>true</settings-migrated>
+  </component>
+</project>

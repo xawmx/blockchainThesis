@@ -1,0 +1,54 @@
+
+test:
+  name: pbft-network
+  description: pbft-network
+  workers:
+    type: local
+    number: 9
+
+  rounds:
+  - label: open
+    description: open
+    txNumber: 1000
+    rateControl:
+      type: fixed-rate
+      opts:
+        tps: 400
+    callback: ../chaincode/demo/callback/open.js
+
+  - label: query
+    description: query
+    txNumber: 1000
+    rateControl:
+      type: fixed-rate
+      opts:
+        tps: 400
+    callback: ../chaincode/demo/callback/query.js
+
+  - label: delete
+    description: delete
+    txNumber: 1000
+    rateControl:
+      type: fixed-rate
+      opts:
+        tps: 400
+    callback: ../chaincode/demo/callback/delete.js
+
+monitor:
+  interval: 1
+  type: 
+    - docker
+  docker:
+    containers:
+    - orderer0.trace.com
+    - orderer1.trace.com
+    - orderer2.trace.com
+    - orderer3.trace.com
+    - peer0.orga.com
+    - peer1.orga.com
+    - peer2.orga.com
+    - peer3.orga.com
+    - peer4.orga.com
+
+
+

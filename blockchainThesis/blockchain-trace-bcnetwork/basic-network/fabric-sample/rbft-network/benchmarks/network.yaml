@@ -1,0 +1,228 @@
+name: Fabric
+version: "1.0"
+
+mutual-tls: false
+
+caliper:
+  blockchain: fabric
+  command:
+    start: scripts/gen.sh;scripts/utils.sh up
+    end: scripts/utils.sh
+
+info:
+  Version: 1.4.4
+  Size: 31 Orders with 5 Peer
+  Orderer: Pbft
+  Distribution: Single Host(Byz)
+  StateDB: GoLevelDB
+
+clients:
+  peer0.orga.com:
+    client:
+      organization: OrgA
+      credentialStore:
+        path: /tmp/crypto/orga
+        cryptoStore:
+          path: /tmp/crypto/orga
+      clientPrivateKey:
+        path: crypto-config/peerOrganizations/orga.com/users/User1@orga.com/msp/keystore/key.pem
+      clientSignedCert:
+        path: crypto-config/peerOrganizations/orga.com/users/User1@orga.com/msp/signcerts/User1@orga.com-cert.pem
+
+channels:
+  mychannel:
+    configBinary: ./channel-artifacts/channel.tx
+    created: true
+    orderers:
+      - orderer0.trace.com
+      - orderer1.trace.com
+      - orderer2.trace.com
+      - orderer3.trace.com
+      - orderer4.trace.com
+      - orderer5.trace.com
+      - orderer6.trace.com
+      - orderer7.trace.com
+      - orderer8.trace.com
+      - orderer9.trace.com
+      - orderer10.trace.com
+      - orderer11.trace.com
+      - orderer12.trace.com
+      - orderer13.trace.com
+      - orderer14.trace.com
+      - orderer15.trace.com
+      - orderer16.trace.com
+      - orderer17.trace.com
+      - orderer18.trace.com
+      - orderer19.trace.com
+      - orderer20.trace.com
+      - orderer21.trace.com
+      - orderer22.trace.com
+      - orderer23.trace.com
+      - orderer24.trace.com
+      - orderer25.trace.com
+      - orderer26.trace.com
+      - orderer27.trace.com
+      - orderer28.trace.com
+      - orderer29.trace.com
+      - orderer30.trace.com
+
+    peers:
+      peer0.orga.com:
+        endorsingPeer: true
+        chaincodeQuery: true
+        ledgerQuery: true
+        eventSource: true
+
+    chaincodes:
+    - id: money_demo
+      version: "1.0"
+      contractID: money_demo
+      language: golang
+      path: ../chaincode/demo
+      targetPeers:
+      - peer0.orga.com
+
+
+organizations:
+  OrgA:
+    mspid: OrgAMSP
+    adminPrivateKey:
+      path: crypto-config/peerOrganizations/orga.com/users/Admin@orga.com/msp/keystore/key.pem
+    signedCert:
+      path: crypto-config/peerOrganizations/orga.com/users/Admin@orga.com/msp/signcerts/Admin@orga.com-cert.pem
+    peers:
+    - peer0.orga.com
+
+
+orderers:
+  orderer0.trace.com:
+    url: grpc://localhost:6050
+    grpcOptions:
+      grpc.keepalive_time_ms: 10000
+  orderer1.trace.com:
+    url: grpc://localhost:6051
+    grpcOptions:
+      grpc.keepalive_time_ms: 10000
+  orderer2.trace.com:
+    url: grpc://localhost:6052
+    grpcOptions:
+      grpc.keepalive_time_ms: 10000
+  orderer3.trace.com:
+    url: grpc://localhost:6053
+    grpcOptions:
+      grpc.keepalive_time_ms: 10000
+  orderer4.trace.com:
+    url: grpc://localhost:6054
+    grpcOptions:
+      grpc.keepalive_time_ms: 10000
+  orderer5.trace.com:
+    url: grpc://localhost:6055
+    grpcOptions:
+      grpc.keepalive_time_ms: 10000
+  orderer6.trace.com:
+    url: grpc://localhost:6056
+    grpcOptions:
+      grpc.keepalive_time_ms: 10000
+  orderer7.trace.com:
+    url: grpc://localhost:6057
+    grpcOptions:
+      grpc.keepalive_time_ms: 10000
+  orderer8.trace.com:
+    url: grpc://localhost:6058
+    grpcOptions:
+      grpc.keepalive_time_ms: 10000
+  orderer9.trace.com:
+    url: grpc://localhost:6059
+    grpcOptions:
+      grpc.keepalive_time_ms: 10000
+  orderer10.trace.com:
+    url: grpc://localhost:6060
+    grpcOptions:
+      grpc.keepalive_time_ms: 10000
+  orderer11.trace.com:
+    url: grpc://localhost:6061
+    grpcOptions:
+      grpc.keepalive_time_ms: 10000
+  orderer12.trace.com:
+    url: grpc://localhost:6062
+    grpcOptions:
+      grpc.keepalive_time_ms: 10000
+  orderer13.trace.com:
+    url: grpc://localhost:6063
+    grpcOptions:
+      grpc.keepalive_time_ms: 10000
+  orderer14.trace.com:
+    url: grpc://localhost:6064
+    grpcOptions:
+      grpc.keepalive_time_ms: 10000
+  orderer15.trace.com:
+    url: grpc://localhost:6065
+    grpcOptions:
+      grpc.keepalive_time_ms: 10000
+  orderer16.trace.com:
+    url: grpc://localhost:6066
+    grpcOptions:
+      grpc.keepalive_time_ms: 10000
+  orderer17.trace.com:
+    url: grpc://localhost:6067
+    grpcOptions:
+      grpc.keepalive_time_ms: 10000
+  orderer18.trace.com:
+    url: grpc://localhost:6068
+    grpcOptions:
+      grpc.keepalive_time_ms: 10000
+  orderer19.trace.com:
+    url: grpc://localhost:6069
+    grpcOptions:
+      grpc.keepalive_time_ms: 10000
+  orderer20.trace.com:
+    url: grpc://localhost:6070
+    grpcOptions:
+      grpc.keepalive_time_ms: 10000
+  orderer21.trace.com:
+    url: grpc://localhost:6071
+    grpcOptions:
+      grpc.keepalive_time_ms: 10000
+  orderer22.trace.com:
+    url: grpc://localhost:6072
+    grpcOptions:
+      grpc.keepalive_time_ms: 10000
+  orderer23.trace.com:
+    url: grpc://localhost:6073
+    grpcOptions:
+      grpc.keepalive_time_ms: 10000
+  orderer24.trace.com:
+    url: grpc://localhost:6074
+    grpcOptions:
+      grpc.keepalive_time_ms: 10000
+  orderer25.trace.com:
+    url: grpc://localhost:6075
+    grpcOptions:
+      grpc.keepalive_time_ms: 10000
+  orderer26.trace.com:
+    url: grpc://localhost:6076
+    grpcOptions:
+      grpc.keepalive_time_ms: 10000
+  orderer27.trace.com:
+    url: grpc://localhost:6077
+    grpcOptions:
+      grpc.keepalive_time_ms: 10000
+  orderer28.trace.com:
+    url: grpc://localhost:6078
+    grpcOptions:
+      grpc.keepalive_time_ms: 10000
+  orderer29.trace.com:
+    url: grpc://localhost:6079
+    grpcOptions:
+      grpc.keepalive_time_ms: 10000
+  orderer30.trace.com:
+    url: grpc://localhost:6080
+    grpcOptions:
+      grpc.keepalive_time_ms: 10000
+
+peers:
+  peer0.orga.com:
+    url: grpc://localhost:7051
+    grpcOptions:
+      grpc.keepalive_time_ms: 10000
+

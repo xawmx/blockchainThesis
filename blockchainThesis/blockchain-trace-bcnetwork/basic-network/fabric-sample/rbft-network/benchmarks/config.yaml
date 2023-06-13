@@ -1,0 +1,81 @@
+
+test:
+  name: pbft-network
+  description: pbft-network
+  workers:
+    type: local
+    number: 36
+
+  rounds:
+  - label: open
+    description: open
+    txNumber: 1000
+    rateControl:
+      type: fixed-rate
+      opts:
+        tps: 400
+    callback: ../chaincode/demo/callback/open.js
+
+  - label: query
+    description: query
+    txNumber: 1000
+    rateControl:
+      type: fixed-rate
+      opts:
+        tps: 400
+    callback: ../chaincode/demo/callback/query.js
+
+  - label: delete
+    description: delete
+    txNumber: 1000
+    rateControl:
+      type: fixed-rate
+      opts:
+        tps: 400
+    callback: ../chaincode/demo/callback/delete.js
+
+monitor:
+  interval: 1
+  type: 
+    - docker
+  docker:
+    containers:
+    - orderer0.trace.com
+    - orderer1.trace.com
+    - orderer2.trace.com
+    - orderer3.trace.com
+    - orderer4.trace.com
+    - orderer5.trace.com
+    - orderer6.trace.com
+    - orderer7.trace.com
+    - orderer8.trace.com
+    - orderer9.trace.com
+    - orderer10.trace.com
+    - orderer11.trace.com
+    - orderer12.trace.com
+    - orderer13.trace.com
+    - orderer14.trace.com
+    - orderer15.trace.com
+    - orderer16.trace.com
+    - orderer17.trace.com
+    - orderer18.trace.com
+    - orderer19.trace.com
+    - orderer20.trace.com
+    - orderer21.trace.com
+    - orderer22.trace.com
+    - orderer23.trace.com
+    - orderer24.trace.com
+    - orderer25.trace.com
+    - orderer26.trace.com
+    - orderer27.trace.com
+    - orderer28.trace.com
+    - orderer29.trace.com
+    - orderer30.trace.com
+    - peer0.orga.com
+    - peer1.orga.com
+    - peer2.orga.com
+    - peer3.orga.com
+    - peer4.orga.com
+
+
+

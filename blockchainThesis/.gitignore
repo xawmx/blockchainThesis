@@ -1,0 +1,3 @@
+# Project exclude paths
+/blockchain-trace-bcnetwork/webapp/node_modules/
+/blockchain-trace-pc/node_modules/
